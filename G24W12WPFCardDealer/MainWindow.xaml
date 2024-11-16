@@ -12,10 +12,26 @@
             x:Name="BtnDeal"
             Content="카드 분배"
             Padding="8"
-            Margin="16"/>
-        <Image 
-            x:Name="Card1" 
-            Height="320"
-            Source="Images/10_of_clubs.png"/>
+            Margin="16" 
+            Click="OnDeal"/>
+        <UniformGrid 
+            Rows="1"
+            Background="#040">
+            <Image x:Name="Card1"
+               Stretch="None"
+               Source="{Binding CardResource[0]}"/>
+            <Image x:Name="Card2"
+               Stretch="None"
+               Source="{Binding CardResource[1]}"/>
+            <Image x:Name="Card3"
+               Stretch="None"
+               Source="{Binding CardResource[2]}"/>
+            <Image x:Name="Card4"
+               Stretch="None"
+               Source="{Binding CardResource[3]}"/>
+            <Image x:Name="Card5"
+               Stretch="None"
+               Source="{Binding CardResource[4]}"/>
+        </UniformGrid>
     </DockPanel>
 </Window>
